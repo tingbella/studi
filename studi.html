@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css" />
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%; 
+  margin: 0;
+  font-size: 17px;
+}
+
+#wafflehacks {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%; 
+  width: 90%
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="wafflehacks">
+  <source src="wafflehacks.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Ready?</h1>
+  <p>When you want to start studying, click the timer above to start your 15 minutes. The background will update once per minute! Check back after you are done studying...</p>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0olugUdHVknbu88YN4ODyX?utm_source=generator&view=coverart" width="20%" height="100" frameBorder="" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" align = "right"; ></iframe>
+</div>
+
+<div class="container">
+  <div class="outerRing">
+    <div class="timer">
+      <div id="time">
+        <span id="minutes">15</span>
+        <span id="colon">:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="stsp">START</div>
+      <span id="setting"><i class="fas fa-cog"></i></span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+<script>
+  
+
+</script>
+
+</body>
+</html>
